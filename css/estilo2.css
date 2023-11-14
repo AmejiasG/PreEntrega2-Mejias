@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Sometype Mono', monospace;
+    background-color: #365b77;
+}
+h1{
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+    margin:2rem;
+    font-size: 4rem;
+    font-weight: normal;
+    color: #ffffff;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+.menu{
+    background-color: #94b8d7;
+    list-style: none;
+    text-align: right;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+}
+.menu li{
+    display:inline-block;
+}
+.menu li a{
+    padding: 20px;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none; /*sacarle es subrayado que vieen por defecto*/
+    display: inline-block;
+}
+.menu li a:hover{ /* cuando el usuario pasa el mouse por encima*/
+    color: rgb(255, 255, 255);
+    background-color:#365b77;
+    border-radius: 7%;
+    
+}
+main{
+    color: rgb(255, 255, 255);
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.servicios{
+    display: flex;
+    justify-content: space-around;
+}
+.p1{
+    background-color: #01364d;
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    width: 400px; /*si no le pongo altura, el overflow no se activaria */
+    border: black 2px solid;
+    border-radius: 10px; /* es para darle redondez al borde */
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+}
+.proyectos{
+    display: flex;
+    justify-content: space-between;
+}
+.p2{
+    background-color: #01364d;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    width: 300px; /*si no le pongo altura, el overflow no se activaria */
+    border: black 2px solid;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+    text-align: center;
+}
+
+.p3{
+    background-color: #01364d;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    width: 300px; /*si no le pongo altura, el overflow no se activaria */
+    border: black 2px solid;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+    text-align: center;
+}
+.p4{
+    background-color: #01364d;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 25px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    width: 300px; /*si no le pongo altura, el overflow no se activaria */
+    border: black 2px solid;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0);
+    text-align: center;
+}
+.p5{
+    background-color: #01364d;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 29px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    width: 300px; /*si no le pongo altura, el overflow no se activaria */
+    border: black 2px solid;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+    text-align: center;
+}
+.p6{
+    background-color: #01364d;
+    padding: 30px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    width: 300px; /*si no le pongo altura, el overflow no se activaria */
+    border: black 2px solid;
+    border-radius: 50px;
+    display: flex;
+    text-align: center;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+
+}
+.form{
+    width: 500px;
+    height: 500px;
+    background-color:#01364d;
+    padding: 20px;
+    margin: 10px 300px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+}
+
+.img1{
+    margin: 50px;
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.35);
+
+
+}
+
+.rrss{
+    list-style: none;
+    text-align: center;
+}
+.rrss li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #01364d;
+    margin: 20px 0; /* 20 px para arriba y 0 para la derecha, y el siguiente seria abajo y el siguiente la izq*/ 
+}
+    h3{
+         color: rgb(114, 88, 67);
+         padding: 20px;
+         text-align: center;
+}
+h2{
+    text-align: center;
+    background-color: #01364d;
+    margin: 10px;
+}
+.video1{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+
+}
+.videoyoutube{
+    position: relative;
+    display: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0);
+}
