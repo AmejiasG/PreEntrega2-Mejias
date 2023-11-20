@@ -9,184 +9,519 @@ body{
 }
 h1{
     font-family: 'Rubik', sans-serif;
-    text-align: left;
-    margin:2rem;
-    font-size: 4rem;
-    font-weight: normal;
-    color: #ffffff;
+    margin:1rem;
+    font-size: 3rem;
+    color: #FFFF;
 }
-.logo{
+
+.inicio {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.3fr 0.5fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav nav"
+      "main1 main2 main3"
+      "main1 main2 main3"
+      "footer footer footer";
+
+}
+
+.header__nav {
+    grid-area: nav;
     display: flex;
+    width: 95%;
+    height: 100px;
+    background-color: #94b8d7;
+    justify-self: center;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+
+.header__menu{
+    display: flex;
+    list-style: none;
+    padding: 10px;
     align-items: center;
+    margin-top: 1rem;
+
+}
+
+.header__menu a{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-decoration: none; /*sacarle es subrayado que vieen por defecto*/
+
+}
+.dropdown-item{
+    background-color: #94b8d7;
     
 }
-.menu{
-    background-color: #94b8d7;
-    list-style: none;
-    text-align: right;
-    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
-}
-.menu li{
-    display:inline-block;
-}
-.menu li a{
-    padding: 20px;
-    margin: 5px;
-    color: rgb(255, 255, 255);
-    text-decoration: none; /*sacarle es subrayado que vieen por defecto*/
-    display: inline-block;
-}
-.menu li a:hover{ /* cuando el usuario pasa el mouse por encima*/
-    color: rgb(255, 255, 255);
+
+.header__menu a:hover{ /* cuando el usuario pasa el mouse por encima*/
+    color: #dadada;
     background-color:#365b77;
     border-radius: 7%;
     
 }
-main{
-    color: rgb(255, 255, 255);
-    margin: 40px;
+
+.header__logo{
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10px;
+
 }
-.servicios{
+
+
+.header__foco{
+    border-radius: 90%;
+}
+
+.main1 {
+    grid-area: main1;
+    color: #dadada;
+    background-color: #01364d;
     display: flex;
-    justify-content: space-around;
+    justify-self: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    width: 380px; /*si no le pongo altura, el overflow no se activaria */
+    border-radius: 10px; /* es para darle redondez al borde */
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
 }
-.p1{
+
+.main2 { 
+    grid-area: main2;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.35);
+}
+
+.main3 {
+    grid-area: main3;
+    margin: 15px;
+
+}
+
+.video__titulo{
+    color: #dadada;
+    display: inline-block;
+    background-color: #01364d;
+    margin: 5px;
+    width: 400px;
+    border: black 2px solid;
+    border-radius: 40px;
+}
+.video__paneles{
+    width: auto;
+    height: 300px;
+    border: black 2px solid;
+    border-radius: 40px;
+}
+
+  
+.footer {
+    grid-area: footer;
+    width: 100%;
+    padding: 10px;
+    background-color: #01364d;
+    margin-top: 20px;
+}
+.proyectos {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.3fr 0.5fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav2 nav2 nav2 nav2"
+        "sectionA sectionB sectionC sectionD"
+        "sectionA sectionB sectionC sectionD"
+        "sectionE sectionE sectionE sectionE";
+}
+
+.nav2 {
+    grid-area: nav2;
+    display: flex;
+    width: 95%;
+    height: 100px;
+    background-color: #94b8d7;
+    justify-self: center;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}     
+.sectionA { 
+    grid-area: sectionA;
+    color: #dadada;
+    background-color: #01364d;
+    margin: 20px;
+    padding: 30px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    width: 320px; /*si no le pongo altura, el overflow no se activaria */
+    height: 800px;
+    border: black 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+    text-align: center;
+    display: flex;
+    justify-self: center;
+}
+      
+.sectionB {
+    grid-area: sectionB;
+    color: #dadada;
+    background-color: #01364d;
+    margin: 20px;
+    padding: 30px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    width: 320px; /*si no le pongo altura, el overflow no se activaria */
+    height: 800px;
+    border: black 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+    text-align: center;
+    display: flex;
+    justify-self: center;
+}
+      
+.sectionC {
+    grid-area: sectionC;
+    color: #dadada;
+    background-color: #01364d;
+    margin: 20px;
+    padding: 35px;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    width: 320px; /*si no le pongo altura, el overflow no se activaria */
+    height: 800px;
+    border: black 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-self: center;
+}
+      
+.sectionD {
+    grid-area: sectionD;
+    color: #dadada;
+    background-color: #01364d;
+    margin: 20px;
+    padding: 40px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    width: 320px; /*si no le pongo altura, el overflow no se activaria */
+    height: 800px;
+    border: black 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+    text-align: center; 
+    display: flex;
+    justify-self: center;
+}
+      
+.sectionE {
+    grid-area: sectionE;
+    background-color: #01364d;
+    margin-top: 20px;
+
+}
+.servicios {
+    margin: 20px auto;
+    display: flex;
+    text-align: center;
+    color: #dadada;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 0.25fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav nav"
+      "insta mant cotiz"
+      "footer footer footer";
+
+}
+
+.insta{
+    grid-area: insta;
     background-color: #01364d;
     margin: 20px;
     padding: 20px;
     line-height: 1.5;
     font-size: 1.4rem;
     width: 400px; /*si no le pongo altura, el overflow no se activaria */
+    height: 400px;
     border: black 2px solid;
     border-radius: 10px; /* es para darle redondez al borde */
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
 }
-.proyectos{
-    display: flex;
-    justify-content: space-between;
-}
-.p2{
+
+.mant{
+    grid-area: mant;
     background-color: #01364d;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 20px;
     padding: 20px;
     line-height: 1.5;
-    font-size: 1.5rem;
-    width: 300px; /*si no le pongo altura, el overflow no se activaria */
+    font-size: 1.4rem;
+    width: 400px; /*si no le pongo altura, el overflow no se activaria */
+    height: 400px;
     border: black 2px solid;
-    border-radius: 10px;
-    display: inline-block;
+    border-radius: 10px; /* es para darle redondez al borde */
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
-    text-align: center;
 }
 
-.p3{
+.cotiz{
+    grid-area: cotiz;
     background-color: #01364d;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 20px;
     padding: 20px;
     line-height: 1.5;
-    font-size: 1.5rem;
-    width: 300px; /*si no le pongo altura, el overflow no se activaria */
+    font-size: 1.4rem;
+    width: 400px; /*si no le pongo altura, el overflow no se activaria */
+    height: 400px;
     border: black 2px solid;
-    border-radius: 10px;
-    display: inline-block;
+    border-radius: 10px; /* es para darle redondez al borde */
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
-    text-align: center;
 }
-.p4{
-    background-color: #01364d;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 25px;
-    line-height: 1.5;
-    font-size: 1.5rem;
-    width: 300px; /*si no le pongo altura, el overflow no se activaria */
-    border: black 2px solid;
-    border-radius: 10px;
-    display: inline-block;
-    box-shadow: 0 5px 15px rgb(0, 0, 0, 0);
-    text-align: center;
+
+.titulos{
+    color: #FFFF;
+    font-weight: bold;
+
 }
-.p5{
-    background-color: #01364d;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 29px;
-    line-height: 1.5;
-    font-size: 1.5rem;
-    width: 300px; /*si no le pongo altura, el overflow no se activaria */
-    border: black 2px solid;
-    border-radius: 10px;
-    display: inline-block;
-    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
-    text-align: center;
+
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .p6{
     background-color: #01364d;
+    color: #dadada;
     padding: 30px;
     line-height: 1.5;
     font-size: 1.5rem;
-    width: 300px; /*si no le pongo altura, el overflow no se activaria */
+    width: 400px; /*si no le pongo altura, el overflow no se activaria */
     border: black 2px solid;
-    border-radius: 50px;
-    display: flex;
-    text-align: center;
+    border-start-start-radius: 50px;
+    border-end-start-radius: 50px;
+    text-align: left;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
 
 }
 .form{
-    width: 500px;
-    height: 500px;
-    background-color:#01364d;
-    padding: 20px;
-    margin: 10px 300px;
+    width: 400px;
+    margin-left: 10px;
+    border: black solid 3px;
+    border-end-end-radius: 50px;
+    border-top-right-radius: 50px;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
 }
 
-.img1{
-    margin: 50px;
-    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.35);
-
+.preguntas{
+    display: flex;
+    width: auto;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
 
 }
-
 .rrss{
     list-style: none;
     text-align: center;
+    padding-left: 0rem;
+}
+.rrss li{
+    padding: 5px;
 }
 .rrss li a{
-    color: #ffffff;
+    color: #dadada;
     text-decoration: none;
 }
+h3{
+    color: #dadada;
+    padding: 20px;
+    text-align: center;
+}
 
-footer{
-    background-color: #01364d;
-    margin: 20px 0; /* 20 px para arriba y 0 para la derecha, y el siguiente seria abajo y el siguiente la izq*/ 
-}
-    h3{
-         color: rgb(114, 88, 67);
-         padding: 20px;
-         text-align: center;
-}
-h2{
-    text-align: center;
-    background-color: #01364d;
-    margin: 10px;
-}
-.video1{
-    position: relative;
-    display: inline-block;
-    text-align: center;
+@media screen and (max-width:1024px){
+    .inicio{
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
     
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "nav"
+          "main1"
+          "main2"
+          "main3"
+          "footer";
+        
+    }
+    .header__nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        justify-self: normal;
+        width: 100%;
+        height: 180px;
 
+    }
+    .main1{
+        height: 90%;
+        width: 800px;
+    }
+    .main2{
+        height: 60%;
+        width: 50%;
+    }
+    .main3{
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        height: 60%;
+        width: 50%;
+    }
+
+
+
+    .proyectos{
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "nav2"
+          "sectionA"
+          "sectionB"
+          "sectionC"
+          "sectionD"
+          "sectionE";
+        
+    }
+    p{
+        display: flex;
+        justify-content: center;
+    }
+    .pro{
+        display: flex;
+        width: 220px;
+        height: 200px;
+    }
+    .nav2{
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        justify-self: normal;
+        width: 95%;
+        height: 180px;
+
+    }
+    .sectionA{
+        height: 90%;
+        width: 60%
+    }
+    .sectionB{
+        height: 90%;
+        width: 60%;
+    }
+    .sectionC{
+        height: 90%;
+        width: 60%;
+    }
+    .sectionD{
+        height: 90%;
+        width: 60%;
+    }
+
+    .servicios{
+        margin: 20px auto;
+        display: flex;
+        text-align: center;
+        color: #dadada;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "nav nav"
+          "insta mant"
+          "cotiz cotiz"
+          "cotiz cotiz"
+          "footer footer";
+        
+    }
+    .insta{
+        width: 100%;
+        height: 80%;
+    }
+    .mant{
+        width: 100%;
+        height: 80%;
+    }
+    .cotiz{
+        width: 100%;
+        height: 30%;
+    }
+    .footer{
+        position: relative;
+    }
 }
-.videoyoutube{
-    position: relative;
-    display: center;
-    text-align: center;
-    align-items: center;
-    box-shadow: 0 5px 15px rgb(0, 0, 0, 0);
+
+@media screen and (max-width:576px){
+
+    .nav2{
+        width: 100%;
+    }
+
+    .sectionA{
+        height: 90%;
+        width: 95%
+    }
+    .sectionB{
+        height: 90%;
+        width: 95%;
+    }
+    .sectionC{
+        height: 90%;
+        width: 95%;
+    }
+    .sectionD{
+        height: 90%;
+        width: 95%;
+    }
 }

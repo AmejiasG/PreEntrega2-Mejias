@@ -10,91 +10,123 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo2.css">
 
     <title>Contacto - Electrohogar</title>
-
 </head>
 <body>
-    <header>
-        <nav>
-          <div class="logo">
-            <img src="../imgs/ampolletaa.png" alt="" width="80" height="80">
-            <h1>Electrohogar</h1>
+    <header class="container-fluid">
+        <div class="row">
+          <div class="col py-3 px-5">
+            <nav class="navbar navbar-expand-lg justify-content-between rounded-3" style="background-color:#94b8d7;">
+              <div class="header__logo">
+                <img src="/imgs/ampolletaa.png" alt="ampolleta" width="60" height="60">
+                <h1>Electrohogar</h1>
+              </div>
+              <ul class="header__menu">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/proyectos.html">Proyectos</a></li>
+                <li><a href="/pages/servicios.html">Servicios</a></li>
+                <li><a href="/pages/noticias.html">Noticias</a></li>
+                <div class="dropdown">
+                  <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contacto
+                  </button>
+                  <ul class="dropdown-menu" style="--bs-dropdown-padding-y: 0rem;">
+                    <li><a class="dropdown-item" href="/pages/contacto.html">Cotizar</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </nav>
           </div>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./proyectos.html">Proyectos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./noticias.html">Noticias</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-            </ul>
-          </nav>
-        </header>
-        <main>
+        </div>
+      </header>
+        <main">
+          <section class="contacto">
             <p class="p6">
-                 Si desea cotizar con nosotros, le invitamos a que pueda completar sus datos y asi nosotros podremos contactarnos con usted.
+                 Si desea cotizar con nosotros, le invitamos a que pueda completar sus datos y así nosotros podremos contactarnos con usted.
             </p>
-            <section class="form">
-                <h2>Formulario</h2>
-                <form action="#">
-                    <div>
-                        <label for="Name">Nombre</label>
-                        <input type="text" name="name" placeholder="Alejandro">
+            <section class="form p-3">
+                <form>
+                    <h2 class="titulos text-center">Formulario</h2>
+                    <div class="text-light mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text text-light">Nunca compartiremos tus datos con alguien.</div>
                     </div>
-                    <br>
-                    <div>
-                        <label for="surname">Apellido</label>
-                        <input type="text" name="surname" placeholder="Mejias">
+                    <div class="text-light mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
                     </div>
-                    <br>
-                        <label for="mail" name="email">Correo electronico</label>
-                        <input type="email" required placeholder="Correo electronico"> 
+                    <div class="text-light mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones</label>
                     </div>
-                    <br>
-                    <br>
-                    <div>
-                        <label for="pais">Pais</label>
-                        <select name="pais" id="">
-                            <option value=""></option>
-                            <option value="ar">Argentina</option>
-                            <option value="ar">Uruguay</option>
-                            <option value="ar">Chile</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="terminos">Acepto Términos</label>
-                        <input type="checkbox" name="terminos">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="submit" value="Enviar Datos">
-                    </div>
-                    <br>
-    
-    
-                    </div>
-                </form>
-    
-    
-    
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+                </section>
             </section>
+            <section class="preguntas">
+            <div class="accordion w-100" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ¿Cuánto tiempo aproximadamente toma terminar un proyecto?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      Dependiendo del tamaño del proyecto, es con el cual nos organizamos para realizarlo de la mejor manera y mas eficiente.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿En que horario trabajan?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      Trabajamos en horario diurno y nocturno, por lo que en cualquier horario nos es conveniente trabajar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Puedo contratar a un número específico de trabajadores?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      Por lo general no aceptamos ese tipo de contratos, pero podemos llegar a un acuerdo. Complete los datos del formulario y estaremos en contacto.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         </main>
-        <footer>
-            <h3>
-                Redes Sociales
-            </h3>
-            <h4>
-                <ul class="rrss">
-                 <li><a href="">Instagram</a></li>
-                 <br>
-                 <li><a href="">Facebook</a></li>
-                 <br>
-                 <li><a href="">Whatsapp</a></li>
-                 <br>
+        <footer class="position-relative w-100 fixed-bottom py-4">
+            <div class="row">
+              <div class="col" style="background-color:#01364d">
+                <h3 class="text-center">Redes Sociales</h3>
+                <ul class="text-center px-0">
+                  <li><a href="" class="text-start text-light text-decoration-none">Instagram</a></li>
+                  <li><a href="" class="text-light text-decoration-none">Facebook</a></li>
+                  <li><a href="" class="text-light text-decoration-none">Whatsapp</a></li>
                 </ul>
-            </h4>
-        </footer>
+              </div>
+            </div>
+          </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

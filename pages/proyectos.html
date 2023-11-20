@@ -10,68 +10,71 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo2.css">
 
     <title>Proyectos - Electrohogar</title>
 
 </head>
 <body>
-    <header>
-        <nav>
-          <div class="logo">
-            <img src="../imgs/ampolletaa.png" alt="" width="80" height="80">
-            <h1>Electrohogar</h1>
+    <div class="proyectos">
+        <nav class="nav2">
+          <div class="header__logo">
+            <img src="/imgs/ampolletaa.png" alt="ampolleta" width="60" height="60">
+              <h1>Electrohogar</h1>
           </div>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./proyectos.html">Proyectos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./noticias.html">Noticias</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-            </ul>
-          </nav>
-        </header>
-        <main class="proyectos">
-            <div>
-                <p class="p2">
-                    <img src="/imgs/bateria.png" alt="bateria">
-                    En los proyectos que realizamos, siempre estarán las baterías que son parte fundamental si es que se quiere realizar una instalación off-grid. Por lo que esta parte viene siendo bastante importante.
-                
-                </p>
-            </div>
-            <div>
-                <p class="p3">
-                    <img src="/imgs/panelsolar.png" alt="panelsolar">
-                    En la realización del trabajo lo más importante es el panel solar, con el cual se recolecta la energia solar para llevarlas a las baterías o directamente a la industria u hogar.
-                </p>
-            </div>
-            <div>
-                <p class="p4">
-                    <img src="/imgs/sol.png" alt="sol">
-                    Por lo que hemos visto, transformar esta energia solar, es lo que nos ha movido a realizar estos trabajos a fin de no utilizar tanto las energias no renovables, las cuales nos tienen yendo hacia un futuro mal visto.
-                </p>
-            </div>
-            <div>
-                <p class="p5"> 
-                    <img src="/imgs/ecoamigable.png" alt="ecoamigable">
-                    Por lo tanto, siendo esta una de las energias renovables más factibles, nos dedicamos a realizar trabajos entorno a este, para que así podamos combatir un poco el efecto invernadero.
-                </p>
-            </div>
-        </main>
-        <footer>
+          <ul class="header__menu">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/pages/proyectos.html">Proyectos</a></li>
+            <li><a href="/pages/servicios.html">Servicios</a></li>
+            <li><a href="/pages/noticias.html">Noticias</a></li>
+            <div class="dropdown">
+                <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contacto
+                </button>
+                <ul class="dropdown-menu" style="--bs-dropdown-padding-y: 0rem;">
+                    <li><a class="dropdown-item" href="/pages/contacto.html">Cotizar</a></li>
+                </ul>
+              </div>
+          </ul> 
+        </nav>
+        <div class="sectionA">
+            <p>
+                <img class="pro" src="/imgs/bateria.png" alt="bateria">
+                En los proyectos que realizamos, siempre estarán las baterías que son parte fundamental si es que se quiere realizar una instalación off-grid. Por lo que esta parte viene siendo bastante importante.
+            </p>
+        </div>
+        <div class="sectionB">
+            <p>
+                <img class="pro" src="/imgs/panelsolar.png" alt="panelsolar">
+                En la realización del trabajo lo más importante es el panel solar, con el cual se recolecta la energia solar para llevarlas a las baterías o directamente a la industria u hogar.
+            </p>
+        </div>
+        <div class="sectionC">
+            <p>
+                <img class="pro" src="/imgs/sol.png" alt="sol">
+                Por lo que hemos visto, transformar esta energia solar, es lo que nos ha movido a realizar estos trabajos a fin de no utilizar tanto las energias no renovables, las cuales nos tienen yendo hacia un futuro mal visto.
+            </p>
+        </div>
+        <div class="sectionD">
+            <p> 
+                <img class="pro" src="/imgs/ecoamigable.png" alt="ecoamigable">
+                Por lo tanto, siendo esta una de las energias renovables más factibles, nos dedicamos a realizar trabajos entorno a este, para que así podamos combatir un poco el efecto invernadero.
+            </p>
+        </div>
+        <div class="sectionE">
             <h3>
                 Redes Sociales
             </h3>
-            <h4>
                 <ul class="rrss">
-                 <li><a href="">Instagram</a></li>
-                 <br>
-                 <li><a href="">Facebook</a></li>
-                 <br>
-                 <li><a href="">Whatsapp</a></li>
-                 <br>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Whatsapp</a></li>
                 </ul>
-            </h4>
-        </footer>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
